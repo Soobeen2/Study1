@@ -1,4 +1,4 @@
-package com.subin.calculator;
+package com.subin.register;
 
 import java.util.Scanner;
 
@@ -15,10 +15,6 @@ public class Application1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("조회할 학생의 이름을 입력하세요 : ");
 		String info = sc.nextLine();
-		
-		// String배열을 생성하고 크기를 1로 지정
-		String[] sarr = new String[1];
-		
 		
 		// 반복문을 이용해서 검색한 이름이 몇번째 index에 있는지 찾고,---> 문자열비교이기 때문에 equals()
 		for(int i = 0; i < name.length; i++) {
