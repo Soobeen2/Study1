@@ -16,8 +16,24 @@ public class Application1 {
 		System.out.print("조회할 학생의 이름을 입력하세요 : ");
 		String info = sc.nextLine();
 		
-
+		// String배열을 생성하고 크기를 1로 지정
 		String[] sarr = new String[1];
-		System.out.println(name + "학생의 정보는 : " + major + number + tutor + adress + " 입니다");
+		
+		
+		// 반복문을 이용해서 검색한 이름이 몇번째 index에 있는지 찾고,---> 문자열비교이기 때문에 equals()
+		for(int i = 0; i < name.length; i++) {
+			if(name[i].equals(info)){
+				
+				// 선생님 숙제
+				System.out.println(name[i] + "은 " + (i+1) + "번째 입니다");
+				
+				// 내가 하고싶던거
+				System.out.println(name[i] + "의 전공은 " + major[i] + "입니다");
+				System.out.println("연락처는 " + number[i] + "입니다");
+				System.out.println("담당교수는 " + tutor[i] + "입니다");
+				System.out.println("주소는 " + adress[i] + "입니다");
+				
+			}
+		}
 	}
 }
